@@ -1,5 +1,5 @@
 body {
-  height: 98vh;
+  height: 100vh;
   margin: 0;
   box-sizing: border-box;
   background: linear-gradient(to bottom, #4b4b4b, #0f0f0f);
@@ -23,17 +23,22 @@ body {
 }
 
 .contentWrapper {
-  background-color: aqua;
   height: 80vh;
 }
 .contentWrapper .buttonDiv {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%;
+  align-items: center;
 }
 .contentWrapper .buttonDiv .button {
-  width: 40%;
+  height: 6vh;
+  width: 25vw;
+  border-radius: 5px;
+  border: none;
+}
+.contentWrapper .buttonDiv .deleteAllButton {
+  background-color: red;
 }
 
 /*# sourceMappingURL=main.css.map */
