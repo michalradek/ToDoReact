@@ -1,0 +1,15 @@
+.headerWrapper {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .headerDiv {
+        text-align: center;
+        .headerH1 {
+            background-color: rgb(161, 161, 161);
+            padding: 5px;
+            border-radius: 5px;
+            margin: 0;
+        }
+    }    
+}

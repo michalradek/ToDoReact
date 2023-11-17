@@ -1,0 +1,14 @@
+.contentWrapper {
+    background-color: aqua;
+    height: 80vh;
+
+    .buttonDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        .button {
+            width: 40%;
+        }
+    }
+}

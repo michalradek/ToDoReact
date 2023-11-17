@@ -1,0 +1,39 @@
+body {
+  height: 98vh;
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #4b4b4b, #0f0f0f);
+  font-family: "Roboto", sans-serif;
+}
+
+.headerWrapper {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerWrapper .headerDiv {
+  text-align: center;
+}
+.headerWrapper .headerDiv .headerH1 {
+  background-color: rgb(161, 161, 161);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.contentWrapper {
+  background-color: aqua;
+  height: 80vh;
+}
+.contentWrapper .buttonDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.contentWrapper .buttonDiv .button {
+  width: 40%;
+}
+
+/*# sourceMappingURL=main.css.map */
