@@ -40,5 +40,11 @@ body {
 .contentWrapper .buttonDiv .deleteAllButton {
   background-color: red;
 }
+.contentWrapper .contentDiv {
+  margin: auto;
+  background-color: aqua;
+  width: 93%;
+  height: 95%;
+}
 
 /*# sourceMappingURL=main.css.map */

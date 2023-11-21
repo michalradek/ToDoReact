@@ -1,5 +1,8 @@
 .contentWrapper {
     height: 80vh;
+    //display: flex;
+    //justify-content: center;
+    //flex-direction: column;
 
     .buttonDiv {
         display: flex;
@@ -17,5 +20,12 @@
         .deleteAllButton {
             background-color: red;
         }
+    }
+
+    .contentDiv {
+        margin: auto;
+        background-color: aqua;
+        width: 93%;
+        height: 95%;
     }
 }
