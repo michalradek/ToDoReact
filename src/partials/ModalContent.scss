@@ -1,3 +1,18 @@
-.modalContent {
-    background-color: transparent;
+.modalDivContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .modalInput {
+        font-size: 24px;
+    }
+
+    .modalButtonDiv {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        .modalButton {
+            width: 45%;
+            height: 5vh;
+        }
+    }
 }

@@ -4,6 +4,11 @@ import Modal from 'react-modal';
 Modal.setAppElement('#root');
 
 const CustomStyles = {
+
+  content: {
+    backgroundColor: 'grey',
+    border: 'none',
+  },
   overlay: {
     backgroundColor: 'transparent',
   }
@@ -11,9 +16,12 @@ const CustomStyles = {
 export const ModalContent = ({isOpen, closeModal}) => {
   return (  
     <Modal isOpen={isOpen} onRequestClose={closeModal} style={CustomStyles}>
-      <div>
-        <h1>123123123</h1>
-        <button onClick={closeModal}>Close</button>
+      <div className='modalDivContent'> 
+        <input placeholder='Write your task here' type='text' className="modalInput"></input>
+        <div className='modalButtonDiv'>
+          <button className='modalButton'>Save</button>
+          <button onClick={closeModal} className='modalButton'>Close</button>
+        </div>
       </div>
     </Modal>
   )

@@ -47,4 +47,22 @@ body {
   height: 95%;
 }
 
+.modalDivContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.modalDivContent .modalInput {
+  font-size: 24px;
+}
+.modalDivContent .modalButtonDiv {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.modalDivContent .modalButtonDiv .modalButton {
+  width: 45%;
+  height: 5vh;
+}
+
 /*# sourceMappingURL=main.css.map */
