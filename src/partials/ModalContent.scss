@@ -10,9 +10,20 @@
         margin-top: 10px;
         display: flex;
         justify-content: space-around;
+
         .modalButton {
             width: 45%;
             height: 5vh;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .modalSaveButton {
+            background-color: rgb(65, 65, 250);
+        }
+
+        .modalCloseButton {
+            background-color: white;
         }
     }
 }

@@ -63,6 +63,14 @@ body {
 .modalDivContent .modalButtonDiv .modalButton {
   width: 45%;
   height: 5vh;
+  border: none;
+  border-radius: 5px;
+}
+.modalDivContent .modalButtonDiv .modalSaveButton {
+  background-color: rgb(65, 65, 250);
+}
+.modalDivContent .modalButtonDiv .modalCloseButton {
+  background-color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
