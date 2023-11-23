@@ -6,12 +6,6 @@ export const Content = () => {
   const [isModalOpen, setOpenModal] = useState(false);
   const [taskList, setTaskList] = useState([]);
 
-  const printList = () => {
-    taskList.push("test");
-    console.log(taskList);
-  }
-
-  printList();
   const openModal = () => {
     setOpenModal(true);
   }
@@ -21,8 +15,10 @@ export const Content = () => {
   }
 
   const handleSave = (tekst) => {
-    console.log(tekst);
+    setTaskList(current => [current, tekst]);
+    console.log(taskList);
   }
+
   return (
     <div className='contentWrapper'>
       <div className='buttonDiv'>
