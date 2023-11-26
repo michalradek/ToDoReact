@@ -38,7 +38,7 @@ export const Content = () => {
       <div className='buttonDiv'>
         <button className='button addButton' onClick={openModal}>Add task</button>
         <ModalContent isOpen={isModalOpen} closeModal={closeModal} onSave={handleSave}/>
-        <button className='button deleteAllButton'>Delete tasks</button>
+        <button className='button deleteAllButton' onClick={deleteAllTasks}>Delete tasks</button>
         <button className='button deleteDoneButton' onClick={deleteDoneTasks}>Delete done tasks</button>
       </div>
       <div className="contentDiv">
@@ -47,7 +47,7 @@ export const Content = () => {
             <div key={index} className='listDiv'>
               <input type="checkbox" id="contentDivInput" className="contentDivInput"
               checked={element.done} onChange={() => toggleTaskDone(index)}></input>
-              <label For="contentDivInput" className='inputLabel'>{element.text}</label>
+              <label htmlFor="contentDivInput" className='inputLabel'>{element.text}</label>
             </div>
           )
         })}
