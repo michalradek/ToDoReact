@@ -24,12 +24,16 @@ body {
 
 .contentWrapper {
   height: 80vh;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 5vh auto;
 }
 .contentWrapper .buttonDiv {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 .contentWrapper .buttonDiv .button {
   height: 6vh;
@@ -41,10 +45,18 @@ body {
   background-color: red;
 }
 .contentWrapper .contentDiv {
-  margin: auto;
-  background-color: aqua;
+  margin-top: 5px;
   width: 93%;
-  height: 95%;
+  height: 70vh;
+  border: 1px solid white;
+  overflow-y: scroll;
+}
+.contentWrapper .contentDiv .listDiv {
+  display: flex;
+  flex-direction: row;
+}
+.contentWrapper .contentDiv .listDiv .inputLabel {
+  font-size: 24px;
 }
 
 .modalDivContent {

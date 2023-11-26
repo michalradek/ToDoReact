@@ -29,6 +29,8 @@ export const ModalContent = ({ isOpen, closeModal, onSave}) => {
     }
     else {
       onSave(inputValue);
+      setInputValue("");
+
     }
   }
 
@@ -39,6 +41,7 @@ export const ModalContent = ({ isOpen, closeModal, onSave}) => {
           placeholder="Write your task here"
           type="text"
           className="modalInput"
+          value={inputValue}
           onChange={(e) => handleInputChange(e.target.value)}></input>
         <div className="modalButtonDiv">
           <button className="modalButton modalSaveButton" onClick={handleSaveButtonClick}>Save</button>
