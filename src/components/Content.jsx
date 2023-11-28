@@ -16,6 +16,7 @@ export const Content = () => {
 
   const handleSave = (tekst) => {
     setTaskList([...taskList, {text: tekst, done: false}]);
+    console.log(taskList);
   }
 
   const deleteAllTasks = () => {
