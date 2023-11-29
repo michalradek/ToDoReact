@@ -1,3 +1,5 @@
+$taskDivBorder: 4px solid rgb(83, 83, 83);
+
 .contentWrapper {
     height: 80vh;
     display: grid;
@@ -14,7 +16,6 @@
 
             height: 6vh;
             width: 25vw;
-            
             border: none;
             border-radius: 5px;
         }
@@ -41,14 +42,13 @@
 
             word-break: break-word;
             hyphens: auto;
-            background-color: rgb(161, 161, 161);
+            background-color: rgba(157,98,146,1);
             margin-bottom: 1vh;
             display: flex;
             flex-direction: row;
             align-items: center;
             border-radius: 5px;
-            border-bottom: 4px solid rgb(83, 83, 83);
-            border-left: 4px solid rgb(83, 83, 83);
+            border-bottom: $taskDivBorder;
             
             .inputLabel {
                 font-size: 2rem;

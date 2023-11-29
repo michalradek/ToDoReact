@@ -5,6 +5,7 @@ export const Content = () => {
 
   const [isModalOpen, setOpenModal] = useState(false);
   const [taskList, setTaskList] = useState([]);
+  const [uniqueId, setuniqueId] = useState(0);
 
   const openModal = () => {
     setOpenModal(true);
@@ -16,7 +17,7 @@ export const Content = () => {
 
   const handleSave = (tekst) => {
     setTaskList([...taskList, {text: tekst, done: false}]);
-    console.log(taskList);
+    setuniqueId(uniqueId + 1);
   }
 
   const deleteAllTasks = () => {
@@ -26,7 +27,7 @@ export const Content = () => {
   const deleteDoneTasks = () => {
     const newTaskList = taskList.filter(task => !task.done);
     setTaskList(newTaskList);
- }
+  }
 
  const toggleTaskDone = (index) => {
     const newTaskList = [...taskList];
@@ -46,9 +47,9 @@ export const Content = () => {
         {taskList.map((element, index) => {
           return (
             <div key={index} className='listDiv'>
-              <input type="checkbox" id="contentDivInput" className="contentDivInput"
+              <input type="checkbox" id={index} className="contentDivInput"
               checked={element.done} onChange={() => toggleTaskDone(index)}></input>
-              <label htmlFor="contentDivInput" className='inputLabel'>{element.text}</label>
+              <label htmlFor={index} className='inputLabel'>{element.text}</label>
             </div>
           )
         })}

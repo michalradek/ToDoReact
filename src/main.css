@@ -22,6 +22,11 @@ body {
   margin: 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .headerH1 {
+    background-color: aqua;
+  }
+}
 .contentWrapper {
   height: 80vh;
   display: grid;
@@ -59,14 +64,13 @@ body {
 .contentWrapper .contentDiv .listDiv {
   word-break: break-word;
   hyphens: auto;
-  background-color: rgb(161, 161, 161);
+  background-color: rgb(157, 98, 146);
   margin-bottom: 1vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   border-radius: 5px;
   border-bottom: 4px solid rgb(83, 83, 83);
-  border-left: 4px solid rgb(83, 83, 83);
 }
 .contentWrapper .contentDiv .listDiv .inputLabel {
   font-size: 2rem;

@@ -34,6 +34,7 @@ export const ModalContent = ({ isOpen, closeModal, onSave}) => {
     }
   }
 
+  
   return (
     <Modal isOpen={isOpen} onRequestClose={closeModal} style={CustomStyles}>
       <div className="modalDivContent">
@@ -42,6 +43,7 @@ export const ModalContent = ({ isOpen, closeModal, onSave}) => {
           type="text"
           className="modalInput"
           value={inputValue}
+          onKeyDown={e => e.key === 'Enter' ? handleSaveButtonClick: ''}
           onChange={(e) => handleInputChange(e.target.value)}></input>
         <div className="modalButtonDiv">
           <button className="modalButton modalSaveButton" onClick={handleSaveButtonClick}>Save</button>
