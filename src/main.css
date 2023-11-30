@@ -130,5 +130,10 @@ body {
     background-color: transparent;
   }
 }
+@media only screen and (min-width: 600px) and (orientation: landscape) {
+  .modalDivContent {
+    background-color: red;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
