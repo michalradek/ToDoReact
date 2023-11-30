@@ -1,19 +1,11 @@
 import React, { useState } from 'react';
-import ModalContent from './ModalContent';
+import Modal from './Modal';
 
 export const Content = () => {
 
-  const [isModalOpen, setOpenModal] = useState(false);
+  const [openModal, setOpenModal] = useState(false)
   const [taskList, setTaskList] = useState([]);
   const [uniqueId, setuniqueId] = useState(0);
-
-  const openModal = () => {
-    setOpenModal(true);
-  }
-
-  const closeModal = () => {
-    setOpenModal(false);
-  }
 
   const handleSave = (tekst) => {
     setTaskList([...taskList, {text: tekst, done: false}]);
@@ -37,9 +29,9 @@ export const Content = () => {
 
   return (
     <div className='contentWrapper'>
+      <Modal open={openModal}/>
       <div className='buttonDiv'>
-        <button className='button addButton' onClick={openModal}>Add task</button>
-        <ModalContent isOpen={isModalOpen} closeModal={closeModal} onSave={handleSave}/>
+        <button className='button addButton' onClick={() => setOpenModal(true)}>Add task</button>
         <button className='button deleteAllButton' onClick={deleteAllTasks}>Delete tasks</button>
         <button className='button deleteDoneButton' onClick={deleteDoneTasks}>Delete done tasks</button>
       </div>

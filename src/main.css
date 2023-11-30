@@ -78,32 +78,6 @@ body {
   min-width: 32px;
 }
 
-.modalDivContent {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.modalDivContent .modalInput {
-  font-size: 24px;
-}
-.modalDivContent .modalButtonDiv {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-around;
-}
-.modalDivContent .modalButtonDiv .modalButton {
-  width: 45%;
-  height: 5vh;
-  border: none;
-  border-radius: 5px;
-}
-.modalDivContent .modalButtonDiv .modalSaveButton {
-  background-color: rgb(65, 65, 250);
-}
-.modalDivContent .modalButtonDiv .modalCloseButton {
-  background-color: white;
-}
-
 @media screen and (min-width: 600px) and (orientation: landscape) {
   .contentWrapper {
     grid-template-columns: auto 20vw;
@@ -128,11 +102,6 @@ body {
   }
   .contentWrapper .contentDiv::-webkit-scrollbar {
     background-color: transparent;
-  }
-}
-@media only screen and (min-width: 600px) and (orientation: landscape) {
-  .modalDivContent {
-    background-color: red;
   }
 }
 
