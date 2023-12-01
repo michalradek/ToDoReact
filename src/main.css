@@ -78,6 +78,39 @@ body {
   min-width: 32px;
 }
 
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  background-color: aqua;
+  height: 50vh;
+  width: 40vw;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+}
+.modalContainer .modalCloseButtonX {
+  margin: 0;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: black;
+}
+.modalContainer .modalInput {
+  width: 75%;
+  height: 2rem;
+}
+
 @media screen and (min-width: 600px) and (orientation: landscape) {
   .contentWrapper {
     grid-template-columns: auto 20vw;

@@ -29,7 +29,7 @@ export const Content = () => {
 
   return (
     <div className='contentWrapper'>
-      <Modal open={openModal}/>
+      <Modal open={openModal} onClose={() => setOpenModal(false)}/>
       <div className='buttonDiv'>
         <button className='button addButton' onClick={() => setOpenModal(true)}>Add task</button>
         <button className='button deleteAllButton' onClick={deleteAllTasks}>Delete tasks</button>
